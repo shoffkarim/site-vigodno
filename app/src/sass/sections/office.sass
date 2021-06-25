@@ -1,0 +1,62 @@
+.office
+  background-color: $purple
+  padding: 100px 0px
+  overflow: hidden
+  &-slider
+    padding: 0px 80px
+    position: relative
+  &-slide
+    width: 100%
+    &__img
+      width: 100%
+      border-radius: 10px
+      overflow: hidden
+      img
+        width: 100%
+        height: auto
+        object-fit: cover
+    &__wrapper
+      padding-left: 50px
+      padding-right: 100px
+      opacity: 0
+      transform: scale(0.2)
+      transition: all 0.8s
+    &__title
+      @include dfr()
+      align-items: flex-end
+      margin-bottom: 30px
+      margin-top: -80px
+    &__num
+      font-size: 118px
+      font-weight: 700
+      color: #fff
+      margin-right: 30px
+    &__text
+      font-size: 35px
+      line-height: 39px
+      color: #fff
+      font-weight: 700
+      max-width: 285px
+    &__desc
+      font-size: 14px
+      line-height: 26px
+      font-weight: 400
+      color: #fff
+      margin-bottom: 50px
+  &-btn
+    position: absolute
+    bottom: 140px
+    z-index: 10
+    cursor: pointer
+    &-next
+      right: 145px
+    &-prev
+      right: 285px
+.swiper-slide-active
+  .office-slide__wrapper
+    opacity: 1
+    transform: scale(1)
+.swiper-slide-next
+  .office-slide__wrapper
+    opacity: 1
+    transform: scale(1)

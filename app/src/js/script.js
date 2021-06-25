@@ -8,3 +8,13 @@ let projects = new Swiper(".projects-slider", {
   spaceBetween: 30,
   loop: false
 });
+
+let office = new Swiper(".office-slider", {
+  slidesPerView: 2.8,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".office-btn-next",
+    prevEl: ".office-btn-prev",
+  }
+});
