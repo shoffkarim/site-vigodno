@@ -1,0 +1,17 @@
+.footer
+  padding: 50px 0px
+  &-wrapper
+    @include dfr()
+    justify-content: space-between
+  &-copyright, &-dev
+    font-size: 14px
+    line-height: 26px
+    font-weight: 400
+    color: #000
+    a
+      color: $purple
+      border-bottom: 1px solid #dccdf5
+      transition: all 0.4s
+      &:hover
+        color: #000
+        border-bottom-color: transparent
