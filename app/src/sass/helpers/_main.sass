@@ -4,6 +4,10 @@ body
   width: 100%
   margin: 0 auto
   padding: 0 20px
+  &--inner
+    width: 100%
+    margin: 0 auto
+    padding: 0 80px
 
 .btn
   &-purple
@@ -13,3 +17,34 @@ body
     font-weight: 600
     border-radius: 27px
     padding: 18px 27px
+
+.section
+  &-title
+    h2
+      font-size: 35px
+      line-height: 39px
+      color: $black
+      font-weight: 700
+  &-left
+    max-width: 408px
+  &-right
+    width: 100%
+
+.text-list
+  &__item
+    position: relative
+    padding-left: 20px
+    margin-bottom: 18px
+    p
+      font-size: 14px
+      line-height: 26px
+      color: $black
+    &::before
+      content: ""
+      width: 6px
+      height: 6px
+      background-color: #824cdd
+      border-radius: 50%
+      position: absolute
+      left: 0
+      top: 0
