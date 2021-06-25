@@ -1,0 +1,45 @@
+.reasons
+  margin-top: 100px
+  &-wrapper
+    @include dfr()
+    align-items: center
+  &-title
+    @include dfr()
+    align-items: flex-end
+    &__num
+      font-size: 118px
+      font-weight: 700
+      color: #020303
+      margin-right: 30px
+    &__text
+      font-size: 35px
+      line-height: 39px
+      font-weight: 700
+      color: #020303
+      max-width: 330px
+  &-list
+    @include dfr()
+    flex-wrap: wrap
+    justify-content: flex-start
+  &-item
+    width: calc(100% / 4 - 20px)
+    margin-right: 20px
+    margin-bottom: 90px
+    &:nth-child(4n)
+      margin-right: 0px
+    &__icon
+      margin-bottom: 10px
+      img
+        width: auto
+        object-fit: contain
+    &__name
+      font-size: 19px
+      line-height: 23px
+      font-weight: 600
+      color: #020303
+      margin-bottom: 15px
+    &__text
+      font-size: 14px
+      line-height: 26px
+      font-weight: 400
+      color: #000
