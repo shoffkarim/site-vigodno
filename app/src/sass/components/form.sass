@@ -1,0 +1,61 @@
+.form
+  &-block
+    width: 100%
+    margin-bottom: 20px
+  &-input
+    width: 100%
+    padding: 5px 0px
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid #9060e1
+    font-size: 14px
+    line-height: 26px
+    color: #fff
+  &-label
+    font-size: 12px
+    font-weight: 400
+    color: #b78cfe
+  &-button
+    margin-top: 40px
+.fake-checkbox
+  @include dfr()
+  align-items: center
+  cursor: pointer
+  input
+    display: none
+    &:checked
+      + .fake-checkbox__box::before
+        opacity: 1
+  &__box
+    width: 26px
+    min-width: 26px
+    height: 26px
+    min-height: 26px
+    border-radius: 10px
+    background-color: #fff
+    margin-right: 10px
+    position: relative
+    &::before
+      content: ""
+      width: 16px
+      height: 12px
+      background-image: url(/app/build/img/checkbox-arrow.png)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      position: absolute
+      top: calc(50% - 6px)
+      left: calc(50% - 8px)
+      opacity: 0
+      transition: all 0.4s
+  &__text
+    font-size: 14px
+    line-height: 26px
+    color: #fff
+    font-weight: 400
+    transition: all 0.4s
+    a
+      color: #fff
+      border-bottom: 1px solid #976ae3
+      &:hover
+        border-bottom-color: transparent
