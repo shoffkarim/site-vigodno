@@ -4,12 +4,19 @@
   background-color: #fbfbfb
   padding: 100px 0px 100px 80px
   position: relative
+  @media screen and ( max-width: 1200px )
+    padding: 100px 0px 100px 20px
   @include dfr()
+  @media screen and ( max-width: 950px )
+    flex-direction: column
   .section-left
     padding-top: 37px
   .section-right
     margin-left: 4px
     overflow: hidden
+    @media screen and ( max-width: 950px )
+      margin-left: 0px
+      margin-top: 50px
   .projects
     &-text
       margin-top: 37px
@@ -17,6 +24,8 @@
       line-height: 26px
       color: $black
       max-width: 340px
+      @media screen and ( max-width: 950px )
+        max-width: none
     &-slide
       position: relative
       height: 468px
@@ -36,6 +45,10 @@
         z-index: 2
         padding: 45px 170px 45px 35px
         margin-top: auto
+        @media screen and ( max-width: 1200px )
+          padding: 45px 35px
+        @media screen and ( max-width: 1000px )
+          padding: 25px 15px
       &__title
         font-size: 19px
         line-height: 23px

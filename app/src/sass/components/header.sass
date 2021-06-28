@@ -5,7 +5,8 @@
     align-items: center
     justify-content: space-between
     padding: 0 60px
-
+    @media screen and ( max-width: 1200px )
+      padding: 0
   &-wrapper
     @include dfr()
     align-items: baseline
@@ -20,10 +21,18 @@
   &-nav
     @include dfr()
     margin-right: 47px
+    @media screen and ( max-width: 1300px )
+      margin-right: 20px
+    @media screen and ( max-width: 1024px )
+      display: none
     &__item
       margin-right: 33px
       &:last-child
         margin-right: 0px
+      @media screen and ( max-width: 1300px )
+        margin-right: 15px
+        &:last-child
+          margin-right: 0px
       a
         font-size: 14px
         line-height: 18px
@@ -41,3 +50,5 @@
       transition: all 0.4s
       &:hover
         color: $purple
+      @media screen and ( max-width: 1200px )
+        font-size: 16px

@@ -3,6 +3,8 @@
   .services
     &-wrapper
       @include dfr()
+      @media screen and ( max-width: 900px )
+        flex-direction: column
     &-list
       box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.05)
       border-radius: 10px
@@ -14,6 +16,8 @@
       @include dfr()
       &:last-child
         border-bottom: none
+      @media screen and ( max-width: 1000px )
+        padding: 34px 25px 22px
       &__icon
         margin-right: 23px
       &__wrapper
@@ -34,11 +38,17 @@
         &:hover
           border-bottom-color: transparent
           color: $purple
+        @media screen and ( max-width: 1000px )
+          font-size: 16px
+          line-height: 20px
       &__price
         font-size: 19px
         line-height: 23px
         font-weight: 600
         color: $black
+        @media screen and ( max-width: 1000px )
+          font-size: 16px
+          line-height: 20px
       &__bottom
         max-width: 490px
       &__text
@@ -55,6 +65,10 @@
       margin-bottom: 18px
       &:nth-child(2n)
         margin-right: 0px
+        @media screen and ( max-width: 1100px )
+          margin-right: 10px
+      @media screen and ( max-width: 1100px )
+        margin-right: 10px
       a
         font-size: 14px
         line-height: 18px

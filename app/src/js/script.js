@@ -35,6 +35,28 @@ let projects = new Swiper(".projects-slider", {
   navigation: {
     nextEl: ".projects-btn-next",
     prevEl: ".projects-btn-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 1.5,
+      spaceBetween: 15
+    },
+    768: {
+      slidesPerView: 2.2,
+      spaceBetween: 15
+    },
+    950: {
+      slidesPerView: 1.1,
+      spaceBetween: 15
+    },
+    1200: {
+      slidesPerView: 1.8,
+      spaceBetween: 30
+    },
+    1600: {
+      slidesPerView: 2.8,
+      spaceBetween: 30,
+    }
   }
 });
 
@@ -45,5 +67,19 @@ let office = new Swiper(".office-slider", {
   navigation: {
     nextEl: ".office-btn-next",
     prevEl: ".office-btn-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.2,
+      spaceBetween: 30
+    },
+    1001: {
+      slidesPerView: 1.5,
+      spaceBetween: 30
+    },
+    1600: {
+      slidesPerView: 2.8,
+      spaceBetween: 30,
+    }
   }
 });

@@ -6,7 +6,6 @@ class Popup {
 
   init() {
     if (document.querySelector(".js-popup-open")) {
-      console.log(1);
       const btnsOpen = document.querySelectorAll(".js-popup-open");
       btnsOpen.forEach((btn) => btn.addEventListener("click", function (e) {
         e.preventDefault();

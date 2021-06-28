@@ -1,5 +1,8 @@
 .logos
   margin-top: 152px
+  // &-container
+  //   @media screen and ( max-width: 950px )
+  //     @include dfr()
   &-list
     @include dfr()
     justify-content: space-between
@@ -7,16 +10,55 @@
     &--1
       .logos-item
         width: calc(100% / 6)
+        @media screen and ( max-width: 950px )
+          width: calc(100% / 4)
+          &:last-child
+            display: none
+          &:nth-last-child(2)
+            display: none
+        @media screen and ( max-width: 650px )
+          width: 50%
     &--2
       margin-right: 48px
       margin-left: 32px
+      @media screen and ( max-width: 1200px )
+        margin: 0
+        width: calc(100% / 3)
+      @media screen and ( max-width: 950px )
+        width: 50%
+      @media screen and ( max-width: 650px )
+        width: 100%
       .logos-item
         width: calc(100%)
         margin-bottom: 110px
+        @media screen and ( max-width: 1200px )
+          width: calc(50%)
+        @media screen and ( max-width: 650px )
+          width: 50%
     &--3
       width: 100%
+      @media screen and ( max-width: 1200px )
+        width: calc(100% / 3 * 2)
+      @media screen and ( max-width: 950px )
+        width: 50%
+      @media screen and ( max-width: 650px )
+        width: 100%
       .logos-item
         width: calc(100% / 3)
+        @media screen and ( max-width: 1200px )
+          width: calc(100% / 4)
+          &:last-child
+            display: none
+          &:nth-last-child(2)
+            display: none
+        @media screen and ( max-width: 950px )
+          width: calc(100% / 2)
+          &:nth-last-child(3)
+            display: none
+          &:nth-last-child(4)
+            display: none
+        @media screen and ( max-width: 650px )
+          width: 50%
   &-item
     @include dfr()
     align-items: center
@@ -28,8 +70,18 @@
       object-fit: contain
   &-wrapper
     @include dfr()
+    .logos-text
+      @media screen and ( max-width: 1200px )
+        display: none
+    @media screen and ( max-width: 650px )
+      flex-wrap: wrap
   &-text
     margin: 12px 58px 10px 34px
+    &--mobile
+      display: none
+      @media screen and ( max-width: 1200px )
+        display: block
+        margin: 0 0px 50px 0px
     &__num
       font-size: 118px
       color: #000

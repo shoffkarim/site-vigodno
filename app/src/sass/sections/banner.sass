@@ -10,12 +10,27 @@
     padding: 93px 0 107px 114px
     position: relative
     z-index: 2
+    @media screen and ( max-width: 1300px )
+      padding: 70px 0 70px 80px
+    @media screen and ( max-width: 1200px )
+      padding: 70px 0 70px 70px
+    @media screen and ( max-width: 1100px )
+      padding: 50px 0 50px 50px
+    @media screen and ( max-width: 767px )
+      max-width: none
+      padding: 50px 25px
   &-title
     font-size: 55px
     line-height: 59px
     font-weight: 700
     color: #fff
     margin-bottom: 39px
+    @media screen and ( max-width: 1200px )
+      font-size: 45px
+      line-height: 50px
+    @media screen and ( max-width: 968px )
+      font-size: 35px
+      line-height: 40px
   &-text
     font-size: 14px
     font-weight: 400
@@ -25,6 +40,8 @@
     width: 100%
     position: relative
     z-index: 2
+    @media screen and ( max-width: 767px )
+      display: none
     img
       width: 610px
       height: auto
@@ -32,6 +49,16 @@
       position: absolute
       bottom: 0
       left: calc(50% - 361px)
+      @media screen and ( max-width: 1300px )
+        width: 500px
+        left: calc(50% - 250px)
+      @media screen and ( max-width: 1200px )
+        width: 70%
+        left: 15%
+      @media screen and (max-width: 875px)
+        width: 85%
+        left: 8%
+
   &-background
     position: absolute
     top: 0

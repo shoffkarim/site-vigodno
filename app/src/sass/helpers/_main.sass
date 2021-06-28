@@ -10,6 +10,8 @@ body
     margin: 0 auto
     padding: 0 80px
     max-width: 1366px
+    @media screen and ( max-width: 1200px )
+      padding: 0 20px
 
 .btn
   &-purple
@@ -33,6 +35,16 @@ body
       line-height: 39px
       color: $black
       font-weight: 700
+      @media screen and ( max-width: 1000px )
+        font-size: 30px
+        line-height: 35px
+      @media screen and ( max-width: 767px )
+        font-size: 26px
+        line-height: 30px
+      @media screen and ( max-width: 500px )
+        font-size: 22px
+        line-height: 26px
+
     + .section-text
       margin-top: 35px
   &-left
@@ -40,6 +52,11 @@ body
     min-width: 408px
     .text-list
       max-width: 340px
+      @media screen and ( max-width: 900px )
+        max-width: none
+    @media screen and ( max-width: 900px )
+      width: 100%
+
   &-right
     width: auto
     flex-grow: 1
@@ -49,6 +66,8 @@ body
     color: #000
     font-weight: 400
     max-width: 340px
+    @media screen and ( max-width: 900px )
+      max-width: none
 .text-list
   margin-top: 36px
   &__item
