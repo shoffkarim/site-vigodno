@@ -4,19 +4,19 @@ section.callback
       .callback-wrapper
         p.callback-title Остались вопросы?
         p.callback-text Мы свяжемся с вами и дадим подробную консультацию!
-        form(action="" method="method").callback-form
+        form(action="" method="method").callback-form.js-form
           .form-block
-            input.form-input(type="text")
+            input.form-input.js-valid(type="text")
             label.form-label(for="") Имя
           .form-block
-            input.form-input(type="text")
+            input.form-input.js-valid.tel-mask(type="tel")
             label.form-label(for="") Телефон
           label.fake-checkbox(for="checkbox1")
-            input(type="checkbox", id="checkbox1")
+            input.js-valid(type="checkbox", id="checkbox1")
             .fake-checkbox__box
             .fake-checkbox__text Согласен на обработку <a href="">персональных данных</a>
           .form-button
-            button.btn.btn-purple.js-bubble-hover(type='submit')
+            button.btn.btn-purple.js-bubble-hover.js-submit(type='submit')
               span Отправить
       .callback-img
         img(src="img/form-img.png", alt="alt")

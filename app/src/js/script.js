@@ -3,7 +3,9 @@
 /* eslint-disable no-undef */
 import '../sass/style.sass';
 import BubbleCreator from './modules/bubble-hover';
+import InputMask from './modules/imask-init';
 import ToggleList from './modules/toggle-list';
+import Validation from './modules/validation';
 
 if (document.querySelector(".js-bubble-hover")) {
   let bubbleCreators = [];
@@ -19,7 +21,8 @@ if (document.querySelector(".js-bubble-hover")) {
 }
 
 const toggleList = new ToggleList();
-
+const validation = new Validation();
+const imask = new InputMask();
 let projects = new Swiper(".projects-slider", {
   slidesPerView: 2.8,
   spaceBetween: 30,

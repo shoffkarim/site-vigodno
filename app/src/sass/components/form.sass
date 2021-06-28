@@ -12,10 +12,13 @@
     font-size: 14px
     line-height: 26px
     color: #fff
+    transition: all 0.4s
     &:focus
       + .form-label
         font-size: 12px
         top: -2px
+    &.error
+      border-bottom-color: #ff2626
   &-label
     font-weight: 400
     color: #b78cfe
@@ -34,6 +37,9 @@
     &:checked
       + .fake-checkbox__box::before
         opacity: 1
+    &.error
+      + .fake-checkbox__box
+        border-color: #ff2626
   &__box
     width: 26px
     min-width: 26px
@@ -43,6 +49,8 @@
     background-color: #fff
     margin-right: 10px
     position: relative
+    border: 1px solid transparent
+    transition: all 0.4s
     &::before
       content: ""
       width: 16px
