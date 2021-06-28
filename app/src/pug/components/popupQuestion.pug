@@ -1,0 +1,28 @@
+.popup.popup-question.js-popup(data-popup="question")
+  .popup-container
+    .popup-wrapper
+      p.popup-title Задать вопрос
+      p.popup-desc Обратите внимание, все поля обязательны для заполнения.
+      form.form.popup-callback__form.js-form(action="" method="method")
+        .form-wrapper
+          .form-block.js-labels-container
+            input.form-input.js-valid(type="text")
+            label.form-label(for="") Имя
+          .form-block.js-labels-container
+            input.form-input.js-valid.tel-mask(type="tel")
+            label.form-label(for="") Телефон
+        .form-block.js-labels-container
+          textarea.form-textarea.js-valid(type="textarea")
+          label.form-label(for="") Текст вопроса
+        .form-bottom
+          .form-agree
+            label.fake-checkbox(for="checkbox2")
+              input.js-valid(type="checkbox", id="checkbox2")
+              .fake-checkbox__box
+              .fake-checkbox__text Согласен на обработку <a href="">персональных данных</a>
+          .form-button
+            button.btn.btn-purple.js-bubble-hover.js-submit(type='submit')
+              span Отправить
+      .popup-close.js-popup-close
+        button
+          img(src="img/popup-close.png", alt="alt")

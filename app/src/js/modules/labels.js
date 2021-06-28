@@ -8,7 +8,12 @@ class Labels {
     if (document.querySelector('.js-labels-container')) {
       const wrappers = document.querySelectorAll('.js-labels-container');
       wrappers.forEach(function (item) {
-        const input = item.querySelector("input");
+        let input;
+        if (item.querySelector("input")) {
+          input = item.querySelector("input");
+        } else {
+          input = item.querySelector("textarea");
+        }
         const label = item.querySelector("label");
         input.addEventListener("blur", function () {
           let value = input.value;

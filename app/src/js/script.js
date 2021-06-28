@@ -7,6 +7,7 @@ import InputMask from './modules/imask-init';
 import Labels from './modules/labels';
 import ToggleList from './modules/toggle-list';
 import Validation from './modules/validation';
+import Popup from "./modules/popup";
 
 if (document.querySelector(".js-bubble-hover")) {
   let bubbleCreators = [];
@@ -25,6 +26,8 @@ const toggleList = new ToggleList();
 const validation = new Validation();
 const imask = new InputMask();
 const labels = new Labels();
+const popup = new Popup();
+
 let projects = new Swiper(".projects-slider", {
   slidesPerView: 2.8,
   spaceBetween: 30,

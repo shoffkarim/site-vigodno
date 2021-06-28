@@ -19,6 +19,24 @@
         top: -2px
     &.error
       border-bottom-color: #ff2626
+  &-textarea
+    width: 100%
+    padding: 10px 2px 7px
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid #9060e1
+    font-size: 14px
+    line-height: 26px
+    color: #fff
+    transition: all 0.4s
+    resize: none
+    height: 44px
+    &:focus
+      + .form-label
+        font-size: 12px
+        top: -2px
+    &.error
+      border-bottom-color: #ff2626
   &-label
     font-weight: 400
     color: #b78cfe
@@ -32,6 +50,11 @@
       top: -2px
   &-button
     margin-top: 40px
+  &-wrapper
+    @include dfr()
+    justify-content: space-between
+    .form-block
+      width: calc(50% - 15px)
 .fake-checkbox
   @include dfr()
   align-items: center
