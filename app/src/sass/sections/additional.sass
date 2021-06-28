@@ -40,6 +40,7 @@
       color: $black
       border-bottom: 1px dotted #c5c5c6
       margin-right: 30px
+      cursor: pointer
       transition: all 0.4s
       &:hover
         border-bottom-color: transparent
@@ -51,8 +52,15 @@
       color: $black
     &__bottom
       max-width: 490px
+      max-height: 0px
+      overflow: hidden
+      transition: all 0.5s
     &__text
       font-size: 14px
       line-height: 26px
       font-weight: 400
       color: #000
+.show
+  .additional-item__bottom
+    max-height: 300px
+    transition: all 0.5s

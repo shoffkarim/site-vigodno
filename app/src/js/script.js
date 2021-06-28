@@ -3,6 +3,7 @@
 /* eslint-disable no-undef */
 import '../sass/style.sass';
 import BubbleCreator from './modules/bubble-hover';
+import ToggleList from './modules/toggle-list';
 
 if (document.querySelector(".js-bubble-hover")) {
   let bubbleCreators = [];
@@ -16,6 +17,8 @@ if (document.querySelector(".js-bubble-hover")) {
     });
   });
 }
+
+const toggleList = new ToggleList();
 
 let projects = new Swiper(".projects-slider", {
   slidesPerView: 2.8,
