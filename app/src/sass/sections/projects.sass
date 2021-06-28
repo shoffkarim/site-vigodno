@@ -3,11 +3,13 @@
   margin-top: 63px
   background-color: #fbfbfb
   padding: 100px 0px 100px 80px
+  position: relative
   @include dfr()
   .section-left
     padding-top: 37px
   .section-right
     margin-left: 4px
+    overflow: hidden
   .projects
     &-text
       margin-top: 37px
@@ -45,3 +47,11 @@
         line-height: 26px
         color: #000
         font-weight: 400
+    &-slider
+      &__nav
+        @include dfr()
+        margin-top: 43px
+    &-btn
+      cursor: pointer
+      z-index: 10
+      margin-right: 30px

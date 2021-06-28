@@ -6,7 +6,11 @@ import '../sass/style.sass';
 let projects = new Swiper(".projects-slider", {
   slidesPerView: 2.8,
   spaceBetween: 30,
-  loop: false
+  loop: false,
+  navigation: {
+    nextEl: ".projects-btn-next",
+    prevEl: ".projects-btn-prev",
+  }
 });
 
 let office = new Swiper(".office-slider", {
