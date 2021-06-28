@@ -1,26 +1,33 @@
 .callback
-  &-wrapper
+  &-container
+    @include dfr()
     background-color: $purple
-    padding-top: 90px
-    padding-left: 115px
-    padding-bottom: 100px
-    border-radius: 10px
     margin-top: 100px
+    border-radius: 10px
+  &-wrapper
+    padding-top: 92px
+    padding-left: 115px
+    padding-bottom: 102px
+    max-width: 585px
+    width: 100%
   &-title
     font-size: 35px
     line-height: 39px
     font-weight: 700
     color: #fff
-    margin-bottom: 40px
+    margin-bottom: 36px
     max-width: 408px
   &-text
     font-size: 14px
     line-height: 26px
     font-weight: 400
     color: #fff
-    margin-bottom: 30px
+    margin-bottom: 24px
+    max-width: 340px
   &-form
     max-width: 408px
+    .fake-checkbox
+      margin-top: 40px
   &-img
     width: 100%
     position: relative
@@ -30,4 +37,4 @@
       object-fit: contain
       position: absolute
       bottom: 0
-      left: calc(50% - 305px)
+      left: calc(50% - 361px)

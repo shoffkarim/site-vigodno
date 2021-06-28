@@ -1,6 +1,7 @@
 .office
   background-color: $purple
-  padding: 100px 0px
+  padding: 100px 0px 120px
+  margin-top: 100px
   overflow: hidden
   &-slider
     padding: 0px 80px
@@ -9,6 +10,7 @@
     width: 100%
     &__img
       width: 100%
+      max-height: 468px
       border-radius: 10px
       overflow: hidden
       img
@@ -16,7 +18,7 @@
         height: auto
         object-fit: cover
     &__wrapper
-      padding-left: 50px
+      padding-left: 46px
       padding-right: 100px
       opacity: 0
       transform: scale(0.2)
@@ -24,34 +26,47 @@
     &__title
       @include dfr()
       align-items: flex-end
-      margin-bottom: 30px
-      margin-top: -80px
+      margin-bottom: 11px
+      margin-top: -79px
     &__num
       font-size: 118px
       font-weight: 700
       color: #fff
-      margin-right: 30px
+      margin-right: 27px
     &__text
       font-size: 35px
-      line-height: 39px
+      line-height: 40px
       color: #fff
       font-weight: 700
       max-width: 285px
+      margin-bottom: 8px
     &__desc
       font-size: 14px
       line-height: 26px
       font-weight: 400
       color: #fff
       margin-bottom: 50px
+      padding-left: 3px
+      padding-right: 80px
+    &__href
+      padding-left: 3px
+      .btn-purple
+        padding: 18px 30px
   &-btn
     position: absolute
     bottom: 140px
     z-index: 10
     cursor: pointer
+    @media screen and ( min-width: 1367px  )
+      bottom: 0px
     &-next
       right: 145px
+      @media screen and ( min-width: 1367px  )
+        right: 40px
     &-prev
       right: 285px
+      @media screen and ( min-width: 1367px  )
+        right: 140px
 .swiper-slide-active
   .office-slide__wrapper
     opacity: 1

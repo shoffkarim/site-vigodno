@@ -2,33 +2,47 @@
   margin-top: 100px
   &-wrapper
     @include dfr()
-    align-items: center
+    align-items: flex-start
   &-title
     @include dfr()
     align-items: flex-end
+    padding-top: 30px
+    margin-right: 140px
     &__num
       font-size: 118px
       font-weight: 700
       color: #020303
-      margin-right: 30px
+      margin-right: 20px
     &__text
       font-size: 35px
       line-height: 39px
       font-weight: 700
       color: #020303
       max-width: 330px
+      margin-bottom: 10px
   &-list
     @include dfr()
     flex-wrap: wrap
     justify-content: flex-start
+    &--top
+      .reasons-item
+        width: calc(50% - 25px)
+        margin-right: 50px
+        &:nth-child(2n)
+          margin-right: 0px
   &-item
-    width: calc(100% / 4 - 20px)
-    margin-right: 20px
-    margin-bottom: 90px
+    width: calc(25% - 25px)
+    margin-right: 33px
+    margin-bottom: 95px
     &:nth-child(4n)
       margin-right: 0px
     &__icon
-      margin-bottom: 10px
+      margin-bottom: 11px
+      width: 40px
+      height: 40px
+      @include dfr()
+      justify-content: center
+      align-items: center
       img
         width: auto
         object-fit: contain
@@ -43,3 +57,4 @@
       line-height: 26px
       font-weight: 400
       color: #000
+      max-width: 260px

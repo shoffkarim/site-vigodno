@@ -10,7 +10,7 @@ let projects = new Swiper(".projects-slider", {
 });
 
 let office = new Swiper(".office-slider", {
-  slidesPerView: 2.8,
+  slidesPerView: 2,
   spaceBetween: 30,
   loop: true,
   navigation: {
