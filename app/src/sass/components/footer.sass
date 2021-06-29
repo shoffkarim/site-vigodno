@@ -3,11 +3,16 @@
   &-wrapper
     @include dfr()
     justify-content: space-between
+    @media screen and ( max-width: 500px )
+      flex-direction: column
   &-copyright, &-dev
     font-size: 14px
     line-height: 26px
     font-weight: 400
     color: #000
+    @media screen and ( max-width: 500px )
+      font-size: 12px
+      line-height: 20px
     a
       color: $purple
       border-bottom: 1px solid #dccdf5

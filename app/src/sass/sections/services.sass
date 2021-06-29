@@ -1,5 +1,7 @@
 .services-section
   margin-top: 92px
+  @media screen and ( max-width: 500px )
+    margin-top: 50px
   .services
     &-wrapper
       @include dfr()
@@ -14,10 +16,14 @@
       padding: 34px 45px 22px 50px
       border-bottom: 1px solid #f2f2f2
       @include dfr()
+
       &:last-child
         border-bottom: none
       @media screen and ( max-width: 1000px )
         padding: 34px 25px 22px
+      @media screen and ( max-width: 500px )
+        flex-direction: column
+        padding: 20px
       &__icon
         margin-right: 23px
       &__wrapper
@@ -27,12 +33,14 @@
         justify-content: space-between
         margin-bottom: 21px
         margin-top: 7px
+        @media screen and ( max-width: 767px )
+          flex-direction: column
+          align-items: flex-start
       &__title
         font-size: 19px
         line-height: 23px
         font-weight: 600
         color: $black
-        border-bottom: 1px solid #c5c5c6
         margin-right: 30px
         transition: all 0.4s
         &:hover
@@ -41,6 +49,8 @@
         @media screen and ( max-width: 1000px )
           font-size: 16px
           line-height: 20px
+        span
+          border-bottom: 1px solid #c5c5c6
       &__price
         font-size: 19px
         line-height: 23px
@@ -49,6 +59,8 @@
         @media screen and ( max-width: 1000px )
           font-size: 16px
           line-height: 20px
+        @media screen and ( max-width: 767px )
+          margin-top: 15px
       &__bottom
         max-width: 490px
       &__text
@@ -57,6 +69,9 @@
         font-weight: 400
         color: #000
         margin-bottom: 8px
+        @media screen and ( max-width: 500px )
+          font-size: 12px
+          line-height: 20px
     &-sublist
       @include dfr()
       flex-wrap: wrap
@@ -79,3 +94,6 @@
         &:hover
           border-bottom-color: transparent
           color: $purple
+        @media screen and ( max-width: 500px )
+          font-size: 12px
+          line-height: 20px

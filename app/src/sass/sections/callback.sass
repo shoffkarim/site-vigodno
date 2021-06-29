@@ -5,6 +5,8 @@
     margin-top: 100px
     border-radius: 10px
     position: relative
+    @media screen and ( max-width: 500px )
+      margin-top: 50px
   &-wrapper
     padding-top: 92px
     padding-left: 115px
@@ -13,6 +15,13 @@
     width: 100%
     position: relative
     z-index: 2
+    @media screen and ( max-width: 1200px )
+      max-width: none
+      padding: 92px 115px 102px 115px
+    @media screen and ( max-width: 950px )
+      padding: 50px
+    @media screen and ( max-width: 500px )
+      padding: 50px 25px
   &-title
     font-size: 35px
     line-height: 39px
@@ -20,6 +29,17 @@
     color: #fff
     margin-bottom: 36px
     max-width: 408px
+    @media screen and ( max-width: 1200px )
+      max-width: none
+    @media screen and ( max-width: 1000px )
+      font-size: 30px
+      line-height: 35px
+    @media screen and ( max-width: 767px )
+      font-size: 26px
+      line-height: 30px
+    @media screen and ( max-width: 500px )
+      font-size: 22px
+      line-height: 26px
   &-text
     font-size: 14px
     line-height: 26px
@@ -27,14 +47,23 @@
     color: #fff
     margin-bottom: 24px
     max-width: 340px
+    @media screen and ( max-width: 1200px )
+      max-width: none
+    @media screen and ( max-width: 500px )
+      font-size: 12px
+      line-height: 20px
   &-form
     max-width: 408px
+    @media screen and ( max-width: 1200px )
+      max-width: none
     .fake-checkbox
       margin-top: 40px
   &-img
     width: 100%
     position: relative
     z-index: 2
+    @media screen and ( max-width: 1200px )
+      display: none
     img
       width: 610px
       height: auto
@@ -42,6 +71,9 @@
       position: absolute
       bottom: 0
       left: calc(50% - 361px)
+      @media screen and ( max-width: 1300px )
+        width: 500px
+        left: calc(50% - 250px)
   &-background
     position: absolute
     top: 0

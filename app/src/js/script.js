@@ -37,6 +37,10 @@ let projects = new Swiper(".projects-slider", {
     prevEl: ".projects-btn-prev",
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 15
+    },
     500: {
       slidesPerView: 1.5,
       spaceBetween: 15
@@ -69,6 +73,14 @@ let office = new Swiper(".office-slider", {
     prevEl: ".office-btn-prev",
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 15
+    },
+    500: {
+      slidesPerView: 1.1,
+      spaceBetween: 15
+    },
     768: {
       slidesPerView: 1.2,
       spaceBetween: 30

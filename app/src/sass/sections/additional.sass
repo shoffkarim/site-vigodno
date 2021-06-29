@@ -1,5 +1,7 @@
 .additional
   margin-top: 100px
+  @media screen and ( max-width: 500px )
+    margin-top: 50px
   .section-left
     padding-top: 37px
   &--steps
@@ -7,12 +9,17 @@
     margin-top: 0px
     padding-top: 97px
     padding-bottom: 100px
+    @media screen and ( max-width: 500px )
+      padding: 50px 0px
     .section-title, .section-text
       max-width: 350px
     .additional-list
       margin-left: 4px
     .additional-item
       padding: 34px 45px 36px 49px
+      @media screen and ( max-width: 500px )
+        flex-direction: column
+        padding: 20px
   &-wrapper
     @include dfr()
     @media screen and ( max-width: 900px )
@@ -30,6 +37,9 @@
       border-bottom: none
     @media screen and ( max-width: 1000px )
       padding: 34px 25px 22px
+    @media screen and ( max-width: 500px )
+      flex-direction: column
+      padding: 20px
     &__icon
       margin-right: 23px
     &__wrapper
@@ -39,12 +49,14 @@
       justify-content: space-between
       margin-bottom: 12px
       margin-top: 7px
+      @media screen and ( max-width: 767px )
+        flex-direction: column
+        align-items: flex-start
     &__title
       font-size: 19px
       line-height: 23px
       font-weight: 600
       color: $black
-      border-bottom: 1px dotted #c5c5c6
       margin-right: 30px
       cursor: pointer
       transition: all 0.4s
@@ -54,6 +66,8 @@
       @media screen and ( max-width: 1000px )
         font-size: 16px
         line-height: 20px
+      span
+        border-bottom: 1px dotted #c5c5c6
     &__price
       font-size: 19px
       line-height: 23px
@@ -62,6 +76,8 @@
       @media screen and ( max-width: 1000px )
         font-size: 16px
         line-height: 20px
+      @media screen and ( max-width: 767px )
+        margin-top: 15px
     &__bottom
       max-width: 490px
       max-height: 0px
@@ -72,6 +88,9 @@
       line-height: 26px
       font-weight: 400
       color: #000
+      @media screen and ( max-width: 500px )
+        font-size: 12px
+        line-height: 20px
 .show
   .additional-item__bottom
     max-height: 300px
