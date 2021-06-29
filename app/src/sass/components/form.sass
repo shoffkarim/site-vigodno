@@ -20,6 +20,8 @@
       + .form-label
         font-size: 12px
         top: -2px
+        @media screen and ( max-width: 500px )
+          top: -8px
     &.error
       border-bottom-color: #ff2626
   &-textarea
@@ -41,6 +43,8 @@
       + .form-label
         font-size: 12px
         top: -2px
+        @media screen and ( max-width: 500px )
+          top: -8px
     &.error
       border-bottom-color: #ff2626
   &-label
@@ -57,13 +61,19 @@
     &.anim
       font-size: 12px
       top: -2px
+      @media screen and ( max-width: 500px )
+        top: -8px
   &-button
     margin-top: 40px
   &-wrapper
     @include dfr()
     justify-content: space-between
+    @media screen and ( max-width: 767px )
+      flex-direction: column
     .form-block
       width: calc(50% - 15px)
+      @media screen and ( max-width: 767px )
+        width: 100%
 .fake-checkbox
   @include dfr()
   align-items: center
