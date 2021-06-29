@@ -1,5 +1,10 @@
 body
   font-family: "Montserrat", sans-serif
+  @include dfc()
+  min-height: 100vh
+  .main
+    height: 100%
+    flex-grow: 1
 .container
   width: 100%
   margin: 0 auto
@@ -30,7 +35,36 @@ body
   span
     position: relative
     z-index: 3
-
+.common
+  &-text
+    font-size: 14px
+    line-height: 26px
+    font-weight: 400
+    @media screen and ( max-width: 500px )
+      font-size: 12px
+      line-height: 20px
+  &-h2
+    font-size: 35px
+    line-height: 39px
+    font-weight: 700
+    @media screen and ( max-width: 1000px )
+      font-size: 30px
+      line-height: 35px
+    @media screen and ( max-width: 767px )
+      font-size: 26px
+      line-height: 30px
+    @media screen and ( max-width: 500px )
+      font-size: 22px
+      line-height: 26px
+.page
+  &-title
+    margin-top: 13px
+    h1
+      font-size: 47px
+      line-height: 59px
+      color: $black
+      text-align: center
+      font-weight: 700
 .section
   &-title
     h2

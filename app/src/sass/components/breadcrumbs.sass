@@ -1,0 +1,31 @@
+.breadcrumbs
+  &-list
+    @include dfr()
+    justify-content: center
+  &-item
+    margin-right: 21px
+    a
+      font-size: 14px
+      line-height: 18px
+      color: #c9c9ca
+      font-weight: 400
+      border-bottom: 1px solid #cacaca
+      position: relative
+      transition: all 0.4s
+      &::before
+        content: "/"
+        width: 6px
+        height: 14px
+        color: #c9c9ca
+        position: absolute
+        top: 2px
+        right: -13px
+      &:hover
+        border-bottom-color: transparent
+    &:last-child
+      margin-right: 0px
+      a
+        border-bottom-color: transparent
+        pointer-events: none
+        &::before
+          display: none

@@ -1,0 +1,54 @@
+section.contacts
+  .container--inner
+    .breadcrumbs
+      ul.breadcrumbs-list
+        li.breadcrumbs-item
+          a(href="") Главная
+        li.breadcrumbs-item
+          a(href="") Контакты
+    .page-title
+      h1 Контакты
+    .contacts-container
+      .contacts-wrapper
+        .contacts-item
+          p.contacts-item__name.common-text Телефон
+          a(href="").contacts-item__tel.common-h2 +7 351 211-44-57
+          p.contacts-item__text.common-text На ваши звонки отвечает менеджер Светлана
+        .contacts-item
+          p.contacts-item__name.common-text Адрес
+          p.contacts-item__text.common-text Челябинск, ул Воровского, 36В
+      .contacts-img
+        .contacts-img__circle
+        .contacts-img__wrapper
+          img(src="img/contacts/img.png", alt="alt")
+section.callback.contacts-callback
+  .container
+    .callback-container
+      .callback-wrapper
+        p.callback-title Обратная связьь
+        p.callback-text Обратите внимание, все поля обязательны для заполнения.
+        form(action="" method="method").callback-form.js-form
+          .form-wrapper
+            .form-container
+              .form-block.js-labels-container
+                input.form-input.js-valid(type="text")
+                label.form-label(for="") Имя
+              .form-block.js-labels-container
+                input.form-input.js-valid.tel-mask(type="tel")
+                label.form-label(for="") Телефон
+            .form-block.js-labels-container
+              textarea.form-textarea.js-valid(type="textarea")
+              label.form-label(for="") Текст вопроса
+          label.fake-checkbox(for="checkbox1")
+            input.js-valid(type="checkbox", id="checkbox1")
+            .fake-checkbox__box
+            .fake-checkbox__text Согласен на обработку <a href="">персональных данных</a>
+          .form-button
+            button.btn.btn-purple.js-bubble-hover.js-submit(type='submit')
+              span Отправить
+      .callback-background
+        .callback-background--1
+        .callback-background--2
+        .callback-background--3
+        .callback-background--4
+
