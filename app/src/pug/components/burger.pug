@@ -1,6 +1,6 @@
-header.header
-  .container
-    .header-container
+.popup.popup-burger.js-popup.popup-open(data-popup="burger")
+  .popup-container
+    .popup-wrapper
       a(href="").header-logo
         img(src="img/logo.png", alt="alt")
       .header-wrapper
@@ -19,6 +19,6 @@ header.header
             a(href="") Контакты
         .header-contacts
           a(href="tel:+73512114457") +7 351 211-44-57
-        .burger
-          button.burger-btn.js-popup-open(data-popup="burger")
-            span
+      .popup-close.js-popup-close
+        button
+          img(src="img/popup-close.png", alt="alt")
