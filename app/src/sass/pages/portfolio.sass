@@ -39,3 +39,22 @@
       max-width: 340px
     .tag
       margin-top: 17px
+  &-characteristics
+    margin-top: 59px
+    &__item
+      @include dfr()
+      padding: 24px 0 21px
+      border-top: 1px solid #f2f2f2
+      &:last-child
+        border-bottom: 1px solid #f2f2f2
+    &__name
+      color: #aeaeb3
+      margin-right: 10px
+    &__text
+      span
+        color: $purple
+        border-bottom: 1px solid #dccdf5
+        transition: all 0.4s
+      &:hover
+        span
+          border-bottom-color: transparent
