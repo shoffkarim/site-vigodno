@@ -65,6 +65,12 @@ body
       color: $black
       text-align: center
       font-weight: 700
+      @media screen and ( max-width: 1000px )
+        font-size: 40px
+        line-height: 50px
+      @media screen and ( max-width: 500px )
+        font-size: 28px
+        line-height: 35px
 .section
   &-title
     h2
@@ -157,3 +163,17 @@ body
 
 .no-overflow
   overflow: hidden
+
+
+.tag
+  font-size: 13px
+  line-height: 17px
+  font-weight: 400
+  color: $purple
+  border-radius: 5px
+  padding: 8px 14px 7px
+  border: 1px solid $purple
+  display: inline-block
+  @media screen and ( max-width: 500px )
+    font-size: 11px
+    line-height: 16px

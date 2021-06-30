@@ -2,6 +2,7 @@
   &-list
     @include dfr()
     justify-content: center
+    flex-wrap: wrap
   &-item
     padding: 8px 22px
     border-radius: 19px
@@ -11,9 +12,20 @@
       span
         color: #fff
         border-bottom-color: transparent
+    &:hover
+      span
+        border-bottom-color: transparent
     span
       color: #000
       font-size: 19px
       line-height: 23px
       font-weight: 600
       border-bottom: 1px dotted #bfbfbf
+      transition: all 0.4s
+      cursor: pointer
+      text-align: center
+      @media screen and ( max-width: 1000px )
+        font-size: 16px
+        line-height: 20px
+
+
