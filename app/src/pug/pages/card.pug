@@ -58,7 +58,8 @@ section.card
           p.card-banner__title Успейте заказать и получите обслуживание в подарок
           p.card-banner__text.common-text При заказе любого готового решения мы дарим хостинг в подарок на 1 год.
           .card-banner__btn
-            button.btn.btn-purple Оставить заявку
+            button.btn.btn-purple.js-bubble-hover
+              span Оставить заявку
           .card-banner__background
             .card-banner__background--1
             .card-banner__background--2
@@ -121,4 +122,54 @@ section.widget
       p.widget-banner__title Нужна косультация?
       p.widget-banner__text.common-text Мы постараемся ответить на все ваши вопросы.
       .widget-banner__btn
-        button.btn.btn-purple Задать вопрос
+        button.btn.btn-purple.js-bubble-hover
+          span Задать вопрос
+section.card-reasons
+  .section-title
+    h2 Преимущества работы с нами
+  ul.reasons-list
+    li.reasons-item
+      .reasons-item__icon
+        img(src="img/reasons/icon-1.png", alt="alt")
+      p.reasons-item__name Цена и сроки
+      p.reasons-item__text Готовый сайт от 15 000 рублей. Срок разработки – от 5 до 15 дней!
+    li.reasons-item
+      .reasons-item__icon
+        img(src="img/reasons/icon-2.png", alt="alt")
+      p.reasons-item__name Дизайн
+      p.reasons-item__text Мы подготовим для вас удобный, современный дизайн.
+    li.reasons-item
+      .reasons-item__icon
+        img(src="img/reasons/icon-3.png", alt="alt")
+      p.reasons-item__name Верстка
+      p.reasons-item__text Разработанные сайты корректно работают на всех компьютерах и мобильных устройствах.
+    li.reasons-item
+      .reasons-item__icon
+        img(src="img/reasons/icon-4.png", alt="alt")
+      p.reasons-item__name Наполнение
+      p.reasons-item__text Мы наполняем ваш сайт информацией. Тексты и изображения выглядят презентабельно.
+section.order
+  .container
+    .order-container
+      .order-wrapper
+        p.order-title Успейте заказать и&nbsp;получите обслуживание в&nbsp;подарок
+        p.order-text.common-text При заказе любого готового решения мы дарим хостинг в подарок на 1 год. Оставьте заявку и наш менеджер свяжется с вами в самое ближайшее время.
+      form(action="" method="method").order-form.js-form
+        .form-block.js-labels-container
+          input.form-input.js-valid(type="text")
+          label.form-label(for="") Имя
+        .form-block.js-labels-container
+          input.form-input.js-valid.tel-mask(type="tel")
+          label.form-label(for="") Телефон
+        label.fake-checkbox(for="checkbox1")
+          input.js-valid(type="checkbox", id="checkbox1")
+          .fake-checkbox__box
+          .fake-checkbox__text Согласен на обработку <a href="">персональных данных</a>
+        .form-button
+          button.btn.btn-purple.js-bubble-hover.js-submit(type='submit')
+            span Оставить заявку
+      .order-background
+        .order-background--1
+        .order-background--2
+        .order-background--3
+        .order-background--4

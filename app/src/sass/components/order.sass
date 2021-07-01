@@ -1,0 +1,68 @@
+.order
+  &-container
+    @include dfr()
+    justify-content: space-between
+    background-color: $purple
+    padding: 82px 118px 99px 114px
+    border-radius: 10px
+    position: relative
+  &-wrapper
+    width: calc(50% - 10px)
+    padding-right: 30px
+    margin-top: 10px
+    position: relative
+    z-index: 2
+  &-title
+    font-size: 35px
+    line-height: 39px
+    font-weight: 700
+    color: #fff
+    margin-bottom: 35px
+    @media screen and ( max-width: 1000px )
+      font-size: 30px
+      line-height: 35px
+    @media screen and ( max-width: 767px )
+      font-size: 26px
+      line-height: 30px
+    @media screen and ( max-width: 500px )
+      font-size: 22px
+      line-height: 26px
+  &-text
+    color: #fff
+  &-form
+    width: calc(50% - 25px)
+    position: relative
+    z-index: 2
+    .fake-checkbox
+      margin-top: 42px
+  &-background
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    &--1, &--2, &--3, &--4
+      position: absolute
+      background-color: #824cdd
+      border-radius: 50%
+    &--1
+      top: 98px
+      left: calc(100% - 41px)
+      width: 44px
+      height: 44px
+    &--2
+      top: calc(50% + 41px)
+      left: calc(50% - 153px)
+      width: 19px
+      height: 19px
+    &--3
+      top: calc(100% - 32px)
+      left: calc(80%)
+      width: 37px
+      height: 37px
+    &--4
+      top: -4px
+      left: 47px
+      width: 26px
+      height: 26px
