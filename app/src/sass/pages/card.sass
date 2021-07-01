@@ -1,5 +1,6 @@
 .card
   margin-top: 97px
+  margin-bottom: 100px
   &-container
     @include dfr()
     justify-content: space-between
@@ -102,3 +103,60 @@
         left: calc(50% + 53px)
         width: 37px
         height: 37px
+.widget
+  background-color: #fbfbfb
+  padding-top: 50px
+  &-container
+    max-width: 1366px
+    margin: 0 auto
+    padding: 0 80px
+    @include dfr()
+    justify-content: space-between
+    align-items: flex-start
+    .tabs-list
+      justify-content: flex-start
+  &-list
+    margin-top: 70px
+  &-banner
+    width: 280px
+    min-width: 280px
+    margin-left: 30px
+    background-color: $purple
+    border-radius: 10px
+    @include dfc()
+    align-items: center
+    padding: 45px
+    &__title
+      font-size: 19px
+      line-height: 23px
+      font-weight: 600
+      color: #ffff
+      text-align: center
+      margin-top: 25px
+      @media screen and ( max-width: 1000px )
+        font-size: 16px
+        line-height: 20px
+    &__text
+      color: #fff
+      text-align: center
+      margin-top: 12px
+    &__btn
+      margin-top: 23px
+    .contacts-img__circle
+      width: 190px
+      height: 190px
+      min-width: 190px
+      min-height: 190px
+      background-color: #692ecd
+      &::before, &::after
+        display: none
+    .contacts-img
+      margin-right: 0px
+    .contacts-img__wrapper
+      width: 190px
+      bottom: 0
+      left: 0
+      &::before, &::after
+        display: none
+    .contacts-img__wrapper img
+      width: 162px
