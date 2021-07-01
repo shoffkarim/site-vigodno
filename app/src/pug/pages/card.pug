@@ -11,18 +11,24 @@ section.card
     .page-title
       h1 Интернет-магазин
     .card-container
-      .card-slider
-        .swiper-wrapper
-          .card-slide.swiper-slide
-            img(src="", alt="alt")
+      .card-slider__container
+        .card-slider
+          .swiper-wrapper
+            .card-slide.swiper-slide
+              img(src="img/services/img-3.png", alt="alt")
+            .card-slide.swiper-slide
+              img(src="img/services/img-3.png", alt="alt")
+            .card-slide.swiper-slide
+              img(src="img/services/img-3.png", alt="alt")
         .card-btn.card-btn-prev
         .card-btn.card-btn-next
       .card-info
-        p.card-info__top.common-text
+        p.card-info__top.common-text Готовое универсальное решение интернет-магазина, позволяющее открыть&nbsp;online-направление для бизнеса любой сферы. Доступно&nbsp;в&nbsp;редакциях&nbsp;«1С-Битрикс: «Малый бизнес» и выше.
         .card-detail
           .card-detail__top
-            p.card-detail__price
+            p.card-detail__price 57 000 Р
             button.btn.btn-white Скрыть детализацию
+          .card-detail__bottom
             .wysiwyg
               ul
                 li Лицензия <a href="">«Малый бизнес»</a> <b>35900 Р</b>
@@ -42,8 +48,6 @@ section.card
             h3 Что нужно для работы сайта
             ul
               li Лицензия на использование готового решения
-
-
               li Редакция 1С-Битрикс <a href="">«Малый бизнес»</a>, <a href="">«Бизнес»</a> или <a href="">«Интернет-магазин + CRM»</a>
               li Регистрация домена и установка сайта на хостинг
             h3 Дополнительные услуги
@@ -51,10 +55,70 @@ section.card
               li Базовая оптимизация <b>9000 Р</b>
               li Рекламная компания <b>от 15000 Р, рассчитывается отдельно</b>
         .card-banner
-          p.card-banner__title
-          p.card-banner__text.common-text
+          p.card-banner__title Успейте заказать и получите обслуживание в подарок
+          p.card-banner__text.common-text При заказе любого готового решения мы дарим хостинг в подарок на 1 год.
           .card-banner__btn
             button.btn.btn-purple Оставить заявку
-            
-
-
+          .card-banner__background
+            .card-banner__background--1
+            .card-banner__background--2
+            .card-banner__background--3
+section.widget
+  .widget-container
+    .widget-wrapper
+      .tabs
+        ul.tabs-list
+          li.tabs-item.active
+            span Отзывы
+          li.tabs-item
+            span Готовые проекты
+      .widget-list
+        ul.reviews-list
+          li.reviews-item
+            .reviews-item__wrapper
+              .reviews-item__top
+                p.reviews-item__title ГПБ-факторинг
+                a(href="").reviews-item__href.common-text
+                  span www.gpb-factoring.ru/conference2018/
+              .reviews-item__text
+                p ООО «ГПБ-факторинг» выражает искреннюю благодарность Вам и всему коллективу Интернет-агентства Dextra за высокое качество предоставленных услуг. Задачи, поставленные перед Агентством, были выполнены в сжатые сроки и с высокой степенью профессионализма.
+                p Мы рады сотрудничеству с Интернет-агентством Dextra и желаем компании дальнейшего роста и процветания.
+              .reviews-item__bottom
+                p.reviews-item__name.common-text Алексей Иванов
+                p.reviews-item__date.common-text 06.10.2020
+            .reviews-item__img
+              img(src="img/reviews/img.png", alt="alt")
+          li.reviews-item
+            .reviews-item__wrapper
+              .reviews-item__top
+                p.reviews-item__title Фикс-Прайс
+              .reviews-item__text
+                p Настоящим письмом ООО «Бэст Прайс» выражает благодарность Генеральному директору Интернет-агентства Dextra Батракову Дмитрию и его команде, реализовавшей разработку нового веб-сайта для бренда «Любосладово».
+                p С уверенностью можем рекомендовать Интернет-агентство Dextra для оказания комплексных услуг по созданию, сопровождению и поддержке сайтов. Надеемся на дальнейшее сотрудничество и желаем успешного достижения новых вершин в бизнесе.
+              .reviews-item__bottom
+                p.reviews-item__name.common-text Петр Краснов
+                p.reviews-item__date.common-text 06.10.2020
+            .reviews-item__img
+              img(src="img/reviews/img-1.png", alt="alt")
+          li.reviews-item
+            .reviews-item__wrapper
+              .reviews-item__top
+                p.reviews-item__title Эксперт-Лизинг
+                a(href="").reviews-item__href.common-text
+                  span www.expert-leasing.ru
+              .reviews-item__text
+                p Выражаем искреннюю благодарность и уважение команде интернет-агентства Dextra за профессионализм и высокую степень ответственности в работе над нашим проектом.
+                p Запуск современного представительного сайта для нас - важный основополагающий этап стратегии интернет—продвижения. Компания вышла на федеральный уровень. поэтому для нас было важно глубокое погружение разработчиков в особенности бизнеса и поиск наилучших, максимально эффективных решений. Что и было сделано.
+                p В настоящий момент мы активно продолжаем сотрудничество с веб-студией по направлениям контекстной рекламы и СЕО-продвижения. Хочется отметить тщательный и профессиональный подход специалиста по контекстной рекламе Марии Булгаковой, а также внимательное отношение и готовность помочь в любых вопросах относительно digital маркетинга менеджера нашего проекта Светланы Савостиной.
+              .reviews-item__bottom
+                p.reviews-item__name.common-text Алексей Иванов
+                p.reviews-item__date.common-text 06.10.2020
+    aside.widget-banner
+      //- .contacts-img
+      //-   .contacts-img__circle
+      //-   .contacts-img__wrapper
+      //-     img(src="img/contacts/img.png", alt="alt")
+      p.widget-banner__title Нужна косультация?
+      p.widget-banner__text Мы постараемся ответить на все ваши вопросы.
+      .widget-banner__btn
+        button.btn.btn-purple Задать вопрос

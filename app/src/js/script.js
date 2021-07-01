@@ -95,3 +95,12 @@ let office = new Swiper(".office-slider", {
     }
   }
 });
+
+let card = new Swiper(".card-slider", {
+  slidesPerView: 1,
+  loop: false,
+  navigation: {
+    nextEl: ".card-btn-next",
+    prevEl: ".card-btn-prev",
+  },
+});

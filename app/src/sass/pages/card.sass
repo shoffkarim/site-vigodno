@@ -1,0 +1,104 @@
+.card
+  margin-top: 97px
+  &-container
+    @include dfr()
+    justify-content: space-between
+    max-width: 1210px
+    margin: 50px auto 0px auto
+    width: 100%
+  &-slider
+    overflow: hidden
+    border: 1px solid #f2f2f2
+    border-radius: 10px
+    &__container
+      width: calc( 50% - 15px )
+      margin-top: 7px
+  &-slide
+    @include dfc()
+    align-items: center
+    justify-content: center
+    padding-top: 66px
+    padding-bottom: 29px
+  &-info
+    width: calc( 50% - 15px )
+  &-detail
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.05)
+    padding: 42px 50px 23px
+    border-radius: 10px
+    margin-top: 32px
+    &__top
+      @include dfr()
+      padding-bottom: 42px
+    &__price
+      font-size: 35px
+      line-height: 39px
+      font-weight: 700
+      color: $black
+      margin-right: 19px
+      @media screen and ( max-width: 1000px )
+        font-size: 30px
+        line-height: 35px
+      @media screen and ( max-width: 767px )
+        font-size: 26px
+        line-height: 30px
+      @media screen and ( max-width: 500px )
+        font-size: 22px
+        line-height: 26px
+    &__bottom
+      padding-top: 15px
+  &-additional
+    margin-top: 65px
+  &-banner
+    background-color: $purple
+    border-radius: 10px
+    padding: 39px 50px 45px
+    margin-top: 63px
+    position: relative
+    &__title
+      color: #fff
+      font-size: 25px
+      line-height: 30px
+      font-weight: 600
+      margin-bottom: 27px
+      position: relative
+      z-index: 2
+      @media screen and ( max-width: 767px )
+        font-size: 20px
+        line-height: 26px
+      @media screen and ( max-width: 500px )
+        font-size: 18px
+        line-height: 24px
+    &__text
+      color: #fff
+      margin-bottom: 21px
+      position: relative
+      z-index: 2
+    &__btn
+      position: relative
+      z-index: 2
+    &__background
+      position: absolute
+      z-index: 1
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      &--1, &--2, &--3
+        position: absolute
+        background-color: #824cdd
+        border-radius: 50%
+      &--1
+        top: 71px
+        left: calc(100% - 38px)
+        width: 44px
+        height: 44px
+      &--2
+        top: calc(50% - 9px)
+        left: calc(50% + 125px)
+        width: 19px
+        height: 19px
+      &--3
+        top: calc(100% - 60px)
+        left: calc(50% + 53px)
+        width: 37px
+        height: 37px
