@@ -6,12 +6,20 @@
     padding: 82px 118px 99px 114px
     border-radius: 10px
     position: relative
+    @media screen and ( max-width: 950px )
+      padding: 50px
+    @media screen and ( max-width: 767px )
+      flex-direction: column
+    @media screen and ( max-width: 500px )
+      padding: 50px 25px
   &-wrapper
     width: calc(50% - 10px)
     padding-right: 30px
     margin-top: 10px
     position: relative
     z-index: 2
+    @media screen and ( max-width: 767px )
+      width: 100%
   &-title
     font-size: 35px
     line-height: 39px
@@ -33,6 +41,9 @@
     width: calc(50% - 25px)
     position: relative
     z-index: 2
+    @media screen and ( max-width: 767px )
+      width: 100%
+      margin-top: 30px
     .fake-checkbox
       margin-top: 42px
   &-background

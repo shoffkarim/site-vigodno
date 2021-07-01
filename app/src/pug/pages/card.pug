@@ -21,13 +21,18 @@ section.card
             .card-slide.swiper-slide
               img(src="img/services/img-3.png", alt="alt")
         .card-btn.card-btn-prev
+          img(src="img/slider-prev.png", alt="alt")
         .card-btn.card-btn-next
+          img(src="img/slider-next.png", alt="alt")
       .card-info
         p.card-info__top.common-text Готовое универсальное решение интернет-магазина, позволяющее открыть&nbsp;online-направление для бизнеса любой сферы. Доступно&nbsp;в&nbsp;редакциях&nbsp;«1С-Битрикс: «Малый бизнес» и выше.
-        .card-detail
+        .card-detail.js-toggle-container.show
           .card-detail__top
             p.card-detail__price 57 000 Р
-            button.btn.btn-white Скрыть детализацию
+            button.btn.btn-white.js-toggle-btn
+              span.hide-text Скрыть
+              span.show-text Показать
+              span  детализацию
           .card-detail__bottom
             .wysiwyg
               ul
