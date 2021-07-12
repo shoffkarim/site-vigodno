@@ -37,12 +37,21 @@
         margin-right: 15px
         &:last-child
           margin-right: 0px
+      @media screen and ( max-width: 1100px )
+        margin-right: 12px
+        &:last-child
+          margin-right: 0px
       &.active
         a
           background-color: $purple
           color: #fff
           border-radius: 27px
           padding: 9px 20px
+          @media screen and ( max-width: 1100px )
+            padding: 9px 11px
+          &:hover
+            opacity: 0.5
+            color: #fff
       a
         font-size: 14px
         line-height: 18px
