@@ -17,11 +17,17 @@ class Popup {
       const popups = document.querySelectorAll(".js-popup");
       popups.forEach(function (item) {
         const btnsClose = item.querySelectorAll(".js-popup-close");
+        const overlay = item.querySelector(".js-overlay");
         btnsClose.forEach((close) => close.addEventListener("click", function (e) {
           e.preventDefault();
           item.classList.remove("popup-open");
           document.body.classList.remove("no-overflow");
         }));
+        overlay.addEventListener("click", function (e) {
+          e.preventDefault();
+          item.classList.remove("popup-open");
+          document.body.classList.remove("no-overflow");
+        });
       });
     }
   }
